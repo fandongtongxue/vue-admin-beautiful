@@ -44,6 +44,27 @@ export const asyncRoutes = [
     ],
   },
   {
+    path: '/video',
+    component: Layout,
+    redirect: '/video/manage',
+    alwaysShow: true,
+    meta: {
+      title: '视频',
+      icon: 'apps-line',
+    },
+    children: [
+      {
+        path: 'manage',
+        name: 'Table',
+        component: () => import('@/views/video/manage'),
+        meta: {
+          title: '管理',
+          icon: 'table-2',
+        },
+      },
+    ],
+  },
+  {
     path: '/vab',
     component: Layout,
     redirect: '/vab/table',

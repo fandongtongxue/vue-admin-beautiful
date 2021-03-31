@@ -3,7 +3,7 @@ import { tokenName } from '@/config'
 
 export async function login(data) {
   return request({
-    url: '/login',
+    url: 'http://admin.video.app.xiaobingkj.com/admin/login/login',
     method: 'post',
     data,
   })

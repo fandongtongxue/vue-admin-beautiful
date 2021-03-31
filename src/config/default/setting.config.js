@@ -16,7 +16,7 @@ const setting = {
   baseURL:
     process.env.NODE_ENV === 'development' ? 'mock-server' : 'mock-server',
   //标题 （包括初次加载雪花屏的标题 页面的标题 浏览器的标题）
-  title: 'vue-admin-beautiful-antdv',
+  title: '小兵短视频后台',
   //标题分隔符
   titleSeparator: ' - ',
   //标题是否反转 如果为false:"page - title"，如果为ture:"title - page"
@@ -38,7 +38,7 @@ const setting = {
   //加载时显示文字
   loadingText: '正在加载中...',
   //token名称
-  tokenName: 'accessToken',
+  tokenName: 'username',
   //token在localStorage、sessionStorage、cookie存储的key的名称
   tokenTableName: 'accessToken',
   //token存储位置localStorage sessionStorage cookie
